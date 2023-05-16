@@ -1,0 +1,53 @@
+*{
+box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    width: 800px;
+    margin: 0px auto;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    position: fixed;
+}
+img:hover {
+    -webkit-transform: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(1000deg);}
+}
+
+@-moz-keyframes spin {
+    100%{-webkit-transform: rotate(1000deg);}
+}
+
+@keyframes spin {
+    100%{-webkit-transform: rotate(1000deg);}
+}
+
+section {
+    padding: 10px 0px 20px 0px;
+}
+
+p{
+    color: white;
+    padding: 10px 0px;
+}
+
+img {
+    width: 50%;
+    padding: 10px;
+}
+
