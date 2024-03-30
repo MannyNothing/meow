@@ -26,20 +26,34 @@ img:hover {
 }
 
 .contenitore-immagine {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 500px; /* Adjust max-width as needed */
+  position: relative; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);  
+  margin: 20px auto;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.contenitore-immagine img {
-  transition: transform 0.5s ease-in-out; /* Animation for smoother rotation */
+@keyframes infinite-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.contenitore-immagine:hover img {
-  transform: rotate(360deg); /* Rotate on hover */
+.contenitore-immagine img:hover {
+  animation: infinite-spin 2s linear infinite;
 }
+
 
 section {
     padding: 10px 0px 20px 0px;
